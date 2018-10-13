@@ -321,6 +321,7 @@ ds_stack_pop(recent_key_presses);
 while (!ds_stack_empty(temp)) {
     ds_stack_push(recent_key_presses, ds_stack_pop(temp));
 }
+ds_stack_destroy(temp);
 </string>
           </argument>
         </arguments>
@@ -351,6 +352,7 @@ ds_stack_pop(recent_key_presses);
 while (!ds_stack_empty(temp)) {
     ds_stack_push(recent_key_presses, ds_stack_pop(temp));
 }
+ds_stack_destroy(temp);
 </string>
           </argument>
         </arguments>
@@ -381,6 +383,7 @@ ds_stack_pop(recent_key_presses);
 while (!ds_stack_empty(temp)) {
     ds_stack_push(recent_key_presses, ds_stack_pop(temp));
 }
+ds_stack_destroy(temp);
 </string>
           </argument>
         </arguments>
@@ -411,6 +414,7 @@ ds_stack_pop(recent_key_presses);
 while (!ds_stack_empty(temp)) {
     ds_stack_push(recent_key_presses, ds_stack_pop(temp));
 }
+ds_stack_destroy(temp);
 </string>
           </argument>
         </arguments>
