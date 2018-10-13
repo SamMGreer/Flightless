@@ -85,16 +85,18 @@ alarm[0] = 5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (instance_exists(obtimemachine)) {
-    var nearest_time_machine = instance_nearest(x, y, obtimemachine);
-    if (distance_to_point(nearest_time_machine.x, nearest_time_machine.y) &lt;= 200) {
-        direction = point_direction(x, y, nearest_time_machine.x, nearest_time_machine.y);
-        speed = 5;
-    }
-} else if (instance_exists(obfruit)) {
+            <string>if (instance_exists(obfruit)) {
     var fruitnear = instance_nearest(x, y, obfruit);
     if (distance_to_point(fruitnear.x, fruitnear.y) &lt;= 200) {
         direction = point_direction(x, y, fruitnear.x, fruitnear.y);
+        speed = 5;
+    }
+}
+
+if (instance_exists(obtimemachine)) {
+    var nearest_time_machine = instance_nearest(x, y, obtimemachine);
+    if (distance_to_point(nearest_time_machine.x, nearest_time_machine.y) &lt;= 200) {
+        direction = point_direction(x, y, nearest_time_machine.x, nearest_time_machine.y);
         speed = 5;
     }
 }

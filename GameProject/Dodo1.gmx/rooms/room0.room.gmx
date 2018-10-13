@@ -53,10 +53,16 @@
   <instances>
     <instance objName="obplayer" x="288" y="256" name="inst_F30A3954" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obfruit" x="416" y="256" name="inst_E4509C54" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obdodo" x="448" y="512" name="inst_DA745E56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obtimemachine" x="224" y="384" name="inst_D5B74469" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obenemy" x="256" y="128" name="inst_1A120EFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obdodo" x="768" y="512" name="inst_DA745E56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obtimemachine" x="736" y="32" name="inst_D5B74469" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obenemy" x="1408" y="256" name="inst_1A120EFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obdino" x="544" y="128" name="inst_1E3AE27E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obfruittree" x="96" y="96" name="inst_0601C118" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obfruittree" x="96" y="256" name="inst_8535FA60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obfruittree" x="96" y="448" name="inst_96837531" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obdodo" x="480" y="480" name="inst_AAFDD914" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obdodo" x="352" y="480" name="inst_FEBA6EDE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obdodo" x="544" y="320" name="inst_2E7309ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
