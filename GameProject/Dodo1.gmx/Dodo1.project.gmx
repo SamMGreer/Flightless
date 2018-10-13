@@ -15,6 +15,9 @@
     <background>background\background0</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\align_to_grid.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obplayer</object>
     <object>objects\obenemy</object>
