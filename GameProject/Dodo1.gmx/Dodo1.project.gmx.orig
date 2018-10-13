@@ -11,8 +11,11 @@
     <sprite>sprites\sprdodo</sprite>
     <sprite>sprites\sprdino</sprite>
     <sprite>sprites\sprfruit</sprite>
+<<<<<<< HEAD
+    <sprite>sprites\sprdinorider</sprite>
+=======
     <sprite>sprites\sprtimemachine</sprite>
-    <sprite>sprites\sprplayerdino</sprite>
+>>>>>>> feature/5
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -27,7 +30,11 @@
     <object>objects\obdodo</object>
     <object>objects\obdino</object>
     <object>objects\obfruit</object>
+<<<<<<< HEAD
+    <object>objects\obdinorider</object>
+=======
     <object>objects\obtimemachine</object>
+>>>>>>> feature/5
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
