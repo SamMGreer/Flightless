@@ -25,9 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = 1
-fruitlust = 0
-fruitnear = 0
+            <string>alarm[0] = 1;
 </string>
           </argument>
         </arguments>
@@ -50,11 +48,21 @@ fruitnear = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if fruitlust = 0
-{
-alarm[0] = 5
-motion_set(choose(0, 90, 180, 270), 10)
+            <string>if (instance_exists(obfruit)) {
+    var nearest_fruit = instance_nearest(x, y, obfruit);
+    if (point_distance(x, y, nearest_fruit.x, nearest_fruit.y) &gt; 200) {
+        motion_set(choose(0, 90, 180, 270), 10);
+    }
+} else if (instance_exists(obtimemachine)) {
+    var nearest_time_machine = instance_nearest(x, y, obtimemachine);
+    if (point_distance(x, y, nearest_time_machine.x, nearest_time_machine.y) &gt; 200) {
+        motion_set(choose(0, 90, 180, 270), 10);
+    }
+} else {
+    motion_set(choose(0, 90, 180, 270), 10);
 }
+
+alarm[0] = 5;
 </string>
           </argument>
         </arguments>
@@ -77,18 +85,18 @@ motion_set(choose(0, 90, 180, 270), 10)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists (obfruit)
-{
-
-fruitnear = instance_nearest(x, y, obfruit);
-
-if distance_to_point(fruitnear.x, fruitnear.y) &lt;= 200 
-{
-direction = point_direction(x, y, fruitnear.x, fruitnear.y)
-speed = 5
-
-}
-
+            <string>if (instance_exists(obtimemachine)) {
+    var nearest_time_machine = instance_nearest(x, y, obtimemachine);
+    if (distance_to_point(nearest_time_machine.x, nearest_time_machine.y) &lt;= 200) {
+        direction = point_direction(x, y, nearest_time_machine.x, nearest_time_machine.y);
+        speed = 5;
+    }
+} else if (instance_exists(obfruit)) {
+    var fruitnear = instance_nearest(x, y, obfruit);
+    if (distance_to_point(fruitnear.x, fruitnear.y) &lt;= 200) {
+        direction = point_direction(x, y, fruitnear.x, fruitnear.y);
+        speed = 5;
+    }
 }
 </string>
           </argument>
@@ -109,27 +117,6 @@ speed = 5
         <whoName>other</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>fruitlust = 0
-</string>
-          </argument>
-        </arguments>
       </action>
     </event>
   </events>
