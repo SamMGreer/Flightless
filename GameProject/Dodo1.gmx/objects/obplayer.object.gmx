@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>recent_key_presses = ds_stack_create();
 lives = 0;
+riding_dinosaur = false;
 </string>
           </argument>
         </arguments>
@@ -155,9 +156,8 @@ align_to_grid(32);
     with (other) {
         instance_destroy();
     }
-    
-    instance_destroy();
-    instance_create(x,y,obdinorider);
+    riding_dinosaur = true;
+    sprite_index = sprplayerdino;
 }
 </string>
           </argument>
@@ -320,6 +320,33 @@ align_to_grid(32);
             <string>if (lives&gt;=1) {
 lives-=1
 instance_create(x,y+50,obfruit)
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="16">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (riding_dinosaur) {
+    instance_create(x, y - 32, obdino);
+    riding_dinosaur = false;
+    sprite_index = player1;
 }
 </string>
           </argument>
