@@ -15,6 +15,9 @@
     <sprite>sprites\sprplayerdino</sprite>
     <sprite>sprites\sprfruittree</sprite>
     <sprite>sprites\sprfruittreefruit</sprite>
+    <sprite>sprites\sprtitle</sprite>
+    <sprite>sprites\sprtitleoptions</sprite>
+    <sprite>sprites\sprbtnstart</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -31,9 +34,13 @@
     <object>objects\obfruit</object>
     <object>objects\obtimemachine</object>
     <object>objects\obfruittree</object>
+    <object>objects\obtitle</object>
+    <object>objects\obtitleoptions</object>
+    <object>objects\obbtnstart</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\rm_title</room>
+    <room>rooms\rm_lv_1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
