@@ -11,6 +11,7 @@
     <sprite>sprites\sprdodo</sprite>
     <sprite>sprites\sprdino</sprite>
     <sprite>sprites\sprfruit</sprite>
+    <sprite>sprites\sprtimemachine</sprite>
     <sprite>sprites\sprdinorider</sprite>
   </sprites>
   <backgrounds name="background">
@@ -26,6 +27,7 @@
     <object>objects\obdodo</object>
     <object>objects\obdino</object>
     <object>objects\obfruit</object>
+    <object>objects\obtimemachine</object>
     <object>objects\obdinorider</object>
   </objects>
   <rooms name="rooms">

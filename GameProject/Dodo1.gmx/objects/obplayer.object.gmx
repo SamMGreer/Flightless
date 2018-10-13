@@ -11,21 +11,89 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>711</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_life</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>0</kind>
-            <string>0</string>
+            <kind>1</kind>
+            <string>recent_key_presses = ds_stack_create();
+lives = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>var hsp = 0;
+var vsp = 0;
+if (keyboard_check(vk_left)) {
+    hsp -= 8;
+}
+if (keyboard_check(vk_right)) {
+    hsp += 8;
+}
+if (keyboard_check(vk_up)) {
+    vsp -= 8;
+}
+if (keyboard_check(vk_down)) {
+    vsp += 8;
+}
+if (y % 32 == 0 &amp;&amp; x % 32 == 0) {
+    last_key_press = ds_stack_top(recent_key_presses);
+    switch (last_key_press) {
+        case vk_up:
+            if (vsp &lt; 0) {
+                vspeed = vsp;
+                hspeed = 0;
+            }
+            break;
+        case vk_down:
+            if (vsp &gt; 0) {
+                vspeed = vsp;
+                hspeed = 0
+            }
+            break;
+        case vk_left:
+            if (hsp &lt; 0) {
+                hspeed = hsp;
+                vspeed = 0;
+            }
+            break;
+        case vk_right:
+            if (hsp &gt; 0) {
+                hspeed = hsp;
+                vspeed = 0;
+            }
+            break;
+    }
+}
+align_to_grid(32);
+</string>
           </argument>
         </arguments>
       </action>
@@ -136,95 +204,6 @@
           <argument>
             <kind>1</kind>
             <string>Fruit: </string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>recent_key_presses = ds_stack_create();
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>var hsp = 0;
-var vsp = 0;
-if (keyboard_check(vk_left)) {
-    hsp -= 8;
-}
-if (keyboard_check(vk_right)) {
-    hsp += 8;
-}
-if (keyboard_check(vk_up)) {
-    vsp -= 8;
-}
-if (keyboard_check(vk_down)) {
-    vsp += 8;
-}
-if (y % 32 == 0 &amp;&amp; x % 32 == 0) {
-    last_key_press = ds_stack_top(recent_key_presses);
-    switch (last_key_press) {
-        case vk_up:
-            if (vsp &lt; 0) {
-                vspeed = vsp;
-                hspeed = 0;
-            }
-            break;
-        case vk_down:
-            if (vsp &gt; 0) {
-                vspeed = vsp;
-                hspeed = 0
-            }
-            break;
-        case vk_left:
-            if (hsp &lt; 0) {
-                hspeed = hsp;
-                vspeed = 0;
-            }
-            break;
-        case vk_right:
-            if (hsp &gt; 0) {
-                hspeed = hsp;
-                vspeed = 0;
-            }
-            break;
-    }
-}
-align_to_grid(32);
-</string>
           </argument>
         </arguments>
       </action>
@@ -372,6 +351,7 @@ ds_stack_pop(recent_key_presses);
 while (!ds_stack_empty(temp)) {
     ds_stack_push(recent_key_presses, ds_stack_pop(temp));
 }
+ds_stack_destroy(temp);
 </string>
           </argument>
         </arguments>
@@ -402,6 +382,7 @@ ds_stack_pop(recent_key_presses);
 while (!ds_stack_empty(temp)) {
     ds_stack_push(recent_key_presses, ds_stack_pop(temp));
 }
+ds_stack_destroy(temp);
 </string>
           </argument>
         </arguments>
@@ -432,6 +413,7 @@ ds_stack_pop(recent_key_presses);
 while (!ds_stack_empty(temp)) {
     ds_stack_push(recent_key_presses, ds_stack_pop(temp));
 }
+ds_stack_destroy(temp);
 </string>
           </argument>
         </arguments>
@@ -462,6 +444,7 @@ ds_stack_pop(recent_key_presses);
 while (!ds_stack_empty(temp)) {
     ds_stack_push(recent_key_presses, ds_stack_pop(temp));
 }
+ds_stack_destroy(temp);
 </string>
           </argument>
         </arguments>
