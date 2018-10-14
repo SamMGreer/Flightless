@@ -165,6 +165,8 @@ align_to_grid(32);
             <kind>1</kind>
             <string>if (!instance_exists(obdodo)) {
     room_goto_next();
+} else {
+    move_bounce_solid(false);
 }
 </string>
           </argument>
@@ -404,7 +406,7 @@ image_xscale = -1
             <string>if (!riding_dinosaur) {
     if (lives &gt;= 1) {
         lives -= 1
-        instance_create(x, y + 64, obfruit);
+        instance_create(x, y + 80, obfruit);
     }
 }
 </string>
@@ -440,9 +442,9 @@ if (riding_dinosaur) {
         var fruit_tree = instance_place(x, y - 1, obfruittree);
         if (fruit_tree.sprite_index == sprfruittreefruit) {
             fruit_tree.sprite_index = sprfruittree
-            instance_create(x - 40, y + 8, obfruit);
-            instance_create(x + 40, y + 8, obfruit);
-            instance_create(x + 8, y + 40, obfruit);
+            instance_create(x - 80, y + 80, obfruit);
+            instance_create(x, y + 80, obfruit);
+            instance_create(x + 80, y + 80, obfruit);
         }
     }
 }
