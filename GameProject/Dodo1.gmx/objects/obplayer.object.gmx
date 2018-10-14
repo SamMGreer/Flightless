@@ -400,7 +400,7 @@ image_xscale = -1
             <string>if (!riding_dinosaur) {
     if (lives &gt;= 1) {
         lives -= 1
-        instance_create(x + 8, y + 40, obfruit);
+        instance_create(x, y + 64, obfruit);
     }
 }
 </string>
