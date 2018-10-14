@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_lv_1);
+            <string>score = 0;
+lives = 0;
+room_goto(rm_lv_1);
 </string>
           </argument>
         </arguments>
