@@ -76,7 +76,7 @@ motion_set(choose(0, 90, 180, 270), 2)
             <kind>1</kind>
             <string>if (instance_exists(obdodo)) {
     dodonear = instance_nearest(x, y, obdodo);
-    if (distance_to_point(dodonear.x, dodonear.y) &lt;= 200) {
+    if (distance_to_point(dodonear.x, dodonear.y) &lt;= 800) {
         direction = point_direction(x, y, dodonear.x, dodonear.y);
         speed = 2;
     }

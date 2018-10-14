@@ -88,12 +88,12 @@
     <instance objName="obenemy" x="2752" y="1760" name="inst_F3758802" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obenemy" x="3424" y="1664" name="inst_C9CC0BD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obenemy" x="3328" y="1856" name="inst_1470785F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obdodo" x="1408" y="1184" name="inst_43E79075" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obdodo" x="1184" y="1312" name="inst_43E79075" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obdodo" x="1152" y="736" name="inst_B90F31BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obdodo" x="1632" y="672" name="inst_A5F5E079" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obdodo" x="2208" y="608" name="inst_20C90816" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obdodo" x="2208" y="1184" name="inst_0362CFD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obdodo" x="1792" y="1280" name="inst_F6E774B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obdodo" x="1536" y="480" name="inst_A5F5E079" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obdodo" x="2240" y="512" name="inst_20C90816" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obdodo" x="2368" y="1312" name="inst_0362CFD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obdodo" x="2112" y="992" name="inst_F6E774B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obdino" x="1664" y="992" name="inst_A5B06167" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obrock" x="1760" y="640" name="inst_89CC18BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obrock" x="2048" y="704" name="inst_FDEEAAB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
