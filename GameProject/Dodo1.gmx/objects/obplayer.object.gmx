@@ -366,9 +366,11 @@ hspeed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (lives&gt;=1) {
-lives-=1
-instance_create(x,y+50,obfruit)
+            <string>if (!riding_dinosaur) {
+    if (lives &gt;= 1) {
+        lives -= 1
+        instance_create(x + 8, y + 40, obfruit);
+    }
 }
 </string>
           </argument>
@@ -392,23 +394,25 @@ instance_create(x,y+50,obfruit)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Get fruit from tree
-if (place_meeting(x, y - 1, obfruittree)) {
-    var fruit_tree = instance_place(x, y - 1, obfruittree);
-    if (fruit_tree.sprite_index == sprfruittreefruit) {
-        fruit_tree.sprite_index = sprfruittree
-        instance_create(x - 48, y + 8, obfruit);
-        instance_create(x + 48, y + 8, obfruit);
-        instance_create(x + 8, y + 48, obfruit);
-    }
-}
-
-// Dismount if riding a dinosaur
+            <string>// Dismount if riding a dinosaur
 if (riding_dinosaur) {
     instance_create(x, y - 32, obdino);
     riding_dinosaur = false;
     sprite_index = player1;
+} else {
+    // Get fruit from tree
+    if (place_meeting(x, y - 1, obfruittree)) {
+        var fruit_tree = instance_place(x, y - 1, obfruittree);
+        if (fruit_tree.sprite_index == sprfruittreefruit) {
+            fruit_tree.sprite_index = sprfruittree
+            instance_create(x - 40, y + 8, obfruit);
+            instance_create(x + 40, y + 8, obfruit);
+            instance_create(x + 8, y + 40, obfruit);
+        }
+    }
 }
+
+
 </string>
           </argument>
         </arguments>
