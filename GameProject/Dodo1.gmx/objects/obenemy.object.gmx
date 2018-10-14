@@ -144,8 +144,7 @@ if (avoid != undefined) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>vspeed = 0;
-hspeed = 0;
+            <string>move_bounce_solid(false);
 </string>
           </argument>
         </arguments>

@@ -20,6 +20,8 @@
     <sprite>sprites\sprbtnstart</sprite>
     <sprite>sprites\sprborder</sprite>
     <sprite>sprites\sprrock</sprite>
+    <sprite>sprites\sprplayerback</sprite>
+    <sprite>sprites\sprplayerfront</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
