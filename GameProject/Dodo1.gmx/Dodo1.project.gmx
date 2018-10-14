@@ -19,6 +19,7 @@
     <sprite>sprites\sprtitleoptions</sprite>
     <sprite>sprites\sprbtnstart</sprite>
     <sprite>sprites\sprborder</sprite>
+    <sprite>sprites\sprrock</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -43,6 +44,7 @@
     <object>objects\obbtnstart</object>
     <object>objects\obwintext</object>
     <object>objects\obborder</object>
+    <object>objects\obrock</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
