@@ -26,6 +26,9 @@
   <scripts name="scripts">
     <script>scripts\align_to_grid.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fntsegoe</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obplayer</object>
     <object>objects\obenemy</object>
@@ -37,10 +40,12 @@
     <object>objects\obtitle</object>
     <object>objects\obtitleoptions</object>
     <object>objects\obbtnstart</object>
+    <object>objects\obwintext</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
     <room>rooms\rm_lv_1</room>
+    <room>rooms\rm_win</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
