@@ -6,10 +6,6 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\sprplayerplaceholder</sprite>
-    <sprite>sprites\sprenemy</sprite>
-    <sprite>sprites\sprdodo</sprite>
-    <sprite>sprites\sprdinoplaceholder</sprite>
     <sprite>sprites\sprfruit</sprite>
     <sprite>sprites\sprtimemachine</sprite>
     <sprite>sprites\sprplayerdino</sprite>
@@ -25,6 +21,7 @@
     <sprite>sprites\sprdodoleft</sprite>
     <sprite>sprites\sprdinorider</sprite>
     <sprite>sprites\sprdino</sprite>
+    <sprite>sprites\sprenemy</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
