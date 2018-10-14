@@ -52,9 +52,9 @@
     <object>objects\obrock</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_win</room>
     <room>rooms\rm_title</room>
     <room>rooms\rm_lv_1</room>
-    <room>rooms\rm_win</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
