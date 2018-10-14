@@ -180,8 +180,7 @@ alarm[0] = 5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hspeed = 0;
-vspeed = 0;
+            <string>move_bounce_solid(false);
 </string>
           </argument>
         </arguments>
