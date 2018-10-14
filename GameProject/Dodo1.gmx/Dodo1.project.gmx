@@ -9,7 +9,6 @@
     <sprite>sprites\sprfruit</sprite>
     <sprite>sprites\sprfruittree</sprite>
     <sprite>sprites\sprfruittreefruit</sprite>
-    <sprite>sprites\sprtitle</sprite>
     <sprite>sprites\sprtitleoptions</sprite>
     <sprite>sprites\sprbtnstart</sprite>
     <sprite>sprites\sprborder</sprite>
@@ -21,11 +20,13 @@
     <sprite>sprites\sprdino</sprite>
     <sprite>sprites\sprenemy</sprite>
     <sprite>sprites\sprtimemachine</sprite>
+    <sprite>sprites\sprtitle</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
     <background>background\bkgwatertiles</background>
     <background>background\bkggrasstiles</background>
+    <background>background\bkgtitlescreen</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
