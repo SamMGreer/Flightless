@@ -52,6 +52,7 @@
   </views>
   <instances>
     <instance objName="obwintext" x="896" y="480" name="inst_CD8FF747" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obbtnstart" x="896" y="864" name="inst_A78EE086" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

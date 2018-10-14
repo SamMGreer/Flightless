@@ -241,43 +241,29 @@ align_to_grid(32);
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
-        <id>500</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
+        <useapplyto>-1</useapplyto>
         <exetype>2</exetype>
         <functionname></functionname>
-        <codestring>draw_self();</codestring>
+        <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>713</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_draw_life</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>10</string>
-          </argument>
-          <argument>
             <kind>1</kind>
-            <string>Fruit: </string>
+            <string>draw_self();
+draw_set_color(c_black);
+draw_set_font(fntsegoe18);
+draw_set_halign(fa_left);
+draw_set_valign(fa_middle);
+draw_sprite(sprfruit, 0, view_xview[0] + 16, view_yview[0] + 16);
+draw_text(view_xview[0] + 64, view_yview[0] + 16, lives);
+draw_text(view_xview[0] + 16, view_yview[0] + 48, "Dodos remaining: " + string(instance_number(obdodo)));
+</string>
           </argument>
         </arguments>
       </action>

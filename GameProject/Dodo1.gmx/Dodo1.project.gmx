@@ -33,7 +33,8 @@
     <script>scripts\align_to_grid.gml</script>
   </scripts>
   <fonts name="fonts">
-    <font>fonts\fntsegoe</font>
+    <font>fonts\fntsegoe32</font>
+    <font>fonts\fntsegoe18</font>
   </fonts>
   <objects name="objects">
     <object>objects\obplayer</object>
