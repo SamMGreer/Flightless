@@ -74,18 +74,30 @@ motion_set(choose(0, 90, 180, 270), 2)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists (obdodo)
-{
-
-dodonear = instance_nearest(x, y, obdodo);
-
-if distance_to_point(dodonear.x, dodonear.y) &lt;= 200 
-{
-direction = point_direction(x, y, dodonear.x, dodonear.y)
-speed = 2
-
+            <string>if (instance_exists(obdodo)) {
+    dodonear = instance_nearest(x, y, obdodo);
+    if (distance_to_point(dodonear.x, dodonear.y) &lt;= 200) {
+        direction = point_direction(x, y, dodonear.x, dodonear.y);
+        speed = 2;
+    }
 }
-
+avoid = undefined;
+if (instance_exists(obdino)) {
+    avoid = instance_nearest(x, y, obdino);
+} else if (instance_exists(obplayer)) {
+    player = instance_find(obplayer, 0);
+    if (player.riding_dinosaur) {
+        avoid = player;
+    }
+}
+if (avoid != undefined) {
+    if (distance_to_point(avoid.x, avoid.y) &lt;= 500) {
+        mid_dir = point_direction(avoid.x, avoid.y, x, y);
+        min_dir = mid_dir - 45;
+        max_dir = mid_dir + 45;
+        direction = irandom_range(min_dir, max_dir);
+        speed = 2;
+    }
 }
 </string>
           </argument>
