@@ -229,7 +229,7 @@ align_to_grid(32);
         instance_destroy();
     }
     riding_dinosaur = true;
-    sprite_index = sprplayerdino;
+    sprite_index = sprdinorider;
 }
 </string>
           </argument>
@@ -300,6 +300,8 @@ align_to_grid(32);
             <string>ds_stack_push(recent_key_presses, vk_down);
 if (!riding_dinosaur) {
     sprite_index = sprplayerfront;
+} else {
+    sprite_index = sprdinorider;
 }
 </string>
           </argument>
@@ -350,6 +352,8 @@ image_xscale = 1;
             <string>ds_stack_push(recent_key_presses, vk_up);
 if (!riding_dinosaur) {
     sprite_index = sprplayerback;
+} else {
+    sprite_index = sprdinorider;
 }
 </string>
           </argument>
@@ -427,7 +431,7 @@ image_xscale = -1
             <kind>1</kind>
             <string>// Dismount if riding a dinosaur
 if (riding_dinosaur) {
-    instance_create(x, y - 64, obdino);
+    instance_create(x, y - 128, obdino);
     riding_dinosaur = false;
     sprite_index = sprplayerfront;
 } else {
